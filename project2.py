@@ -124,11 +124,11 @@ def test(model, device, test_loader):
 
 
 def main():
-    # Read sequences from file
+   
     train_sequences = read_sequences('train.txt')
     test_sequences = read_sequences('test.txt')
 
-    # Create datasets and dataloaders
+   
     train_dataset = CustomDataset(train_sequences)
     test_dataset = CustomDataset(test_sequences)
     train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
